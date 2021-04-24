@@ -1,5 +1,9 @@
 """ Configuration settings are defined as class variables inside
 the Config class.
+
+SECRET_KEY = cryptographic key
+Used with Flask-WTF extension to protect web forms against CSRF
+
 """
 import os
 
