@@ -32,6 +32,10 @@ def index():
         {
             'author': {'username': 'Will'},
             'body': 'Testing; one, two.'
+        },
+        {
+            'author': {'username': 'Lisa'},
+            'body': 'Congrats Will!'
         }
     ]
     return render_template('index.html', title='Home', user=user, posts=posts)
@@ -41,3 +45,8 @@ def index():
 def login():
     form = LoginForm()
     return render_template('login.html', title="Sign in", form=form)
+
+
+@app.route('/contact')
+def contact():
+    return render_template('contact.html', title="Contact")
