@@ -45,10 +45,10 @@ def index():
 def login():
     form = LoginForm()
     if form.validate_on_submit():
-        flash('Login requested for user {}, remember_me{}'.format(
+        flash('Login requested for user {}: remember_me is {}'.format(
             form.username.data, form.remember_me.data))
         return redirect('/index')  # instructs web client browser to navigate away
-    return render_template('login.html', title="Sign in", form=form)
+    return render_template('login.html', title="Login", form=form)
 
 
 @app.route('/contact')
