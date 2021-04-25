@@ -13,7 +13,6 @@
                         <li>{{  error }}</li>
                     </ul></div>
             {% endfor %}
-        </p>
         <p>
             {{ form.password.label }}<br>
             {{ form.password(size=32) }}
@@ -23,7 +22,7 @@
                         <li>{{  error }}</li>
                     </ul></div>
             {% endfor %}
-        <p style="color: blue;">{{ form.remember_me() }} {{ form.remember_me.label }}</p>
+        <p style="color: cornflowerblue;">{{ form.remember_me() }} {{ form.remember_me.label }}</p>
         <p>{{ form.submit() }}</p>
     </form>
 {% endblock %}
