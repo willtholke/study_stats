@@ -7,12 +7,23 @@
         <p>
             {{ form.username.label }}<br>
             {{ form.username(size=32) }}
+            {% for error in form.username.errors %}
+                <div style="color: crimson;">
+                    <ul>
+                        <li>{{  error }}</li>
+                    </ul></div>
+            {% endfor %}
         </p>
         <p>
             {{ form.password.label }}<br>
             {{ form.password(size=32) }}
-        </p>
-        <p>{{ form.remember_me() }} {{ form.remember_me.label }}</p>
+            {% for error in form.password.errors %}
+                <div style="color: crimson;">
+                    <ul>
+                        <li>{{  error }}</li>
+                    </ul></div>
+            {% endfor %}
+        <p style="color: blue;">{{ form.remember_me() }} {{ form.remember_me.label }}</p>
         <p>{{ form.submit() }}</p>
     </form>
 {% endblock %}
