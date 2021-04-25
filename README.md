@@ -6,6 +6,13 @@
 2) [Objectives](#objectives)
 2) [Resources](#resources)
 
+## Personal Notes
+SQLAlchemy follows the relational model in that SQL (a popular relational
+query language) is implemented. I'm using a SQLite database in development
+sinch each database is stored in a single file and
+there is no use for a database server. These configs are added
+in the config.py file.
+
 ## Structure
 ```
 study-stats/
@@ -47,15 +54,16 @@ The /.flaskenv file holds this!
 (venv) $ pip install flask-sqlalchemy
 ```
 
+5) To work with database migrations, install `flask-migrate`
+```
+(venv) $ pip install flask-migrate
+```
+
 ## Resources
 - [The Flask Mega Tutorial](https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world)
 - [Flask Docs: Larger Application Design](https://flask.palletsprojects.com/en/1.1.x/patterns/packages/)
 - [Flask Documentation](https://flask.palletsprojects.com/en/1.1.x/api/#)
 
-## Personal Notes
-SQLAlchemy follows the *relational* model in that SQL (a popular relational
-query language) is implemented.
-
 ## Objectives
-SQLAlchemy follows the *relational* model in that SQL (a popular relational
-query language) is implemented.
+- Implement database in SQLAlchemy
+- OAuth, styling, timer functionality
