@@ -17,13 +17,13 @@
             <a href="/contact">Contact</a>
         </div><hr>
         {% with messages = get_flashed_messages() %}
-        {% if messages %}
-        <ul>
-            {% for message in message %}
-            <li>{{ message }}</li>
-            {% endfor %}
-        </ul>
-        {% endif %}
+            {% if messages %}
+                <ul class="flashes">
+                    {% for message in messages %}
+                        <li>{{ message }}</li>
+                    {% endfor %}
+                </ul>
+            {% endif %}
         {% endwith %}
         {% block content %}{% endblock %}
     </body>
