@@ -11,8 +11,12 @@ from mutual references between the two files.
 """
 from flask import Flask
 from config import Config
+from flask_sqlalchemy import SQLAlchemy
+from flask_migrate import Migrate
 
 app = Flask(__name__)
 app.config.from_object(Config)  # Read and apply config file
+db = SQLAlchemy(app)
+migrate = Migrate(app, db)
 
 from app import routes
