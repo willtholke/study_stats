@@ -1,11 +1,10 @@
 # Study Stats Project
-***
 
 ## Navigation
-1) ###[Running the Application](#running-the-application)
-1) ###[Personal Notes](#personal-notes)
-2) ###[Objectives](#objectives)
-2) ###[Resources](#resources)
+1) [Running the Application](#running-the-application)
+1) [Personal Notes](#personal-notes)
+2) [Objectives](#objectives)
+2) [Resources](#resources)
 
 ## Structure
 ```
