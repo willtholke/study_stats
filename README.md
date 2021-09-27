@@ -1,4 +1,4 @@
-# Study Stats Project [Deprecated]
+# Study Stats Project [Deprecated Version]
 
 ## Navigation
 1) [Running the Application](#running-the-application)
